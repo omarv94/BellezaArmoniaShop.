@@ -47,7 +47,7 @@ function productos_type(){
     $labels = array(
         'name'          => 'Productos',
         'singular_name' => 'Producto',
-        'manu_name'     => 'Productos',
+        'menu_name'     => 'Productos',
     );
     $args = array(
         'label'         => 'Productos',
@@ -63,7 +63,7 @@ function productos_type(){
         'rewrite'       => true,
         'show_in_rest'  =>true,
     );
-    register_post_type('producto',$args);
+    register_post_type('Producto',$args);
 }
 add_action('init','productos_type');
 ?>
